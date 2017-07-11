@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0088D9A79B8034EACB9B472B /* Pods_GTFirebaseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 500944BE723AB342AA20D382 /* Pods_GTFirebaseChat.framework */; };
+		DCF6F8F41F14E115005CEA8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCF6F8F31F14E115005CEA8B /* GoogleService-Info.plist */; };
+		DCF6F8F91F14E895005CEA8B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6F8F81F14E895005CEA8B /* User.swift */; };
+		DCF6F8FB1F150492005CEA8B /* FriendListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF6F8FA1F150492005CEA8B /* FriendListVC.swift */; };
 		DEE827FD1F14D7530023F4A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE827F71F14D7530023F4A1 /* AppDelegate.swift */; };
 		DEE827FE1F14D7530023F4A1 /* GTFirebaseChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEE827F81F14D7530023F4A1 /* GTFirebaseChat.xcdatamodeld */; };
 		DEE827FF1F14D7530023F4A1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEE827FA1F14D7530023F4A1 /* Info.plist */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		1A3A506A25C6EBEF7B78D53A /* Pods-GTFirebaseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GTFirebaseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-GTFirebaseChat/Pods-GTFirebaseChat.release.xcconfig"; sourceTree = "<group>"; };
 		500944BE723AB342AA20D382 /* Pods_GTFirebaseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GTFirebaseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF6F8F31F14E115005CEA8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCF6F8F81F14E895005CEA8B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DCF6F8FA1F150492005CEA8B /* FriendListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListVC.swift; sourceTree = "<group>"; };
 		DEE827DD1F14D6B20023F4A1 /* GTFirebaseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GTFirebaseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE827F71F14D7530023F4A1 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEE827F91F14D7530023F4A1 /* GTFirebaseChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GTFirebaseChat.xcdatamodel; sourceTree = "<group>"; };
@@ -60,6 +66,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DCF6F8F71F14E880005CEA8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCF6F8F81F14E895005CEA8B /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		DEE827D41F14D6B20023F4A1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,24 +95,18 @@
 		DEE827DF1F14D6B20023F4A1 /* GTFirebaseChat */ = {
 			isa = PBXGroup;
 			children = (
+				DCF6F8F71F14E880005CEA8B /* Model */,
 				DEE828011F14D7900023F4A1 /* View */,
-				DEE827F51F14D7530023F4A1 /* Model */,
 				DEE827FB1F14D7530023F4A1 /* ViewController */,
 				DEE827F61F14D7530023F4A1 /* SupportingFiles */,
 			);
 			path = GTFirebaseChat;
 			sourceTree = "<group>";
 		};
-		DEE827F51F14D7530023F4A1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		DEE827F61F14D7530023F4A1 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DCF6F8F31F14E115005CEA8B /* GoogleService-Info.plist */,
 				DEE828081F14D7980023F4A1 /* Assets.xcassets */,
 				DEE827F71F14D7530023F4A1 /* AppDelegate.swift */,
 				DEE827F81F14D7530023F4A1 /* GTFirebaseChat.xcdatamodeld */,
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				DEE827FC1F14D7530023F4A1 /* ViewController.swift */,
+				DCF6F8FA1F150492005CEA8B /* FriendListVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -188,6 +197,7 @@
 			files = (
 				DEE828071F14D7900023F4A1 /* Main.storyboard in Resources */,
 				DEE827FF1F14D7530023F4A1 /* Info.plist in Resources */,
+				DCF6F8F41F14E115005CEA8B /* GoogleService-Info.plist in Resources */,
 				DEE828091F14D7980023F4A1 /* Assets.xcassets in Resources */,
 				DEE828061F14D7900023F4A1 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -248,6 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCF6F8FB1F150492005CEA8B /* FriendListVC.swift in Sources */,
+				DCF6F8F91F14E895005CEA8B /* User.swift in Sources */,
 				DEE828001F14D7530023F4A1 /* ViewController.swift in Sources */,
 				DEE827FD1F14D7530023F4A1 /* AppDelegate.swift in Sources */,
 				DEE827FE1F14D7530023F4A1 /* GTFirebaseChat.xcdatamodeld in Sources */,
@@ -375,9 +387,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = /Volumes/Data/Project/GitProjects/GTFirebaseChat/GTFirebaseChat/GTFirebaseChat/GTFirebaseChat/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GTFirebaseChat/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zealous.GTFirebaseChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtfirebasechat.GTFirebaseChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -390,9 +402,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = /Volumes/Data/Project/GitProjects/GTFirebaseChat/GTFirebaseChat/GTFirebaseChat/GTFirebaseChat/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GTFirebaseChat/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zealous.GTFirebaseChat;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtfirebasechat.GTFirebaseChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

@@ -59,8 +59,8 @@
 			children = (
 				DEE828011F14D7900023F4A1 /* View */,
 				DEE827F51F14D7530023F4A1 /* Model */,
-				DEE827F61F14D7530023F4A1 /* SupportingFiles */,
 				DEE827FB1F14D7530023F4A1 /* ViewController */,
+				DEE827F61F14D7530023F4A1 /* SupportingFiles */,
 			);
 			path = GTFirebaseChat;
 			sourceTree = "<group>";
